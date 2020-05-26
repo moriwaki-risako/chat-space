@@ -17,6 +17,7 @@
 ### Association
 - has_many :groups,  through: :group_users
 - has_many :massages
+- has_many :group_users
 
 ## groupテーブル
 |Column|Type|Options|
@@ -26,6 +27,7 @@
 ### Association
 - has_many :users,  through: :group_users
 - has_many :massages
+- has_many :group_users
 
 ## massageテーブル
 |Column|Type|Options|
