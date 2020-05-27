@@ -1,1 +1,16 @@
 .sidebar
+  .sidebar__header
+    .sideheader__items
+      .sideheader__items__username 
+        masa
+      .sideheader__items__iconlist
+        = link_to "#", class: "link__icon" do
+          = icon('far', 'edit')
+          
+        = link_to "#", class: "link__icon" do
+          = icon('fas', 'cog')
+
+  .sidebar__grouplist
+    .group__box
+      %h2.group__box__name techcamp
+      %p.group__box__massage まだメッセージはありません
