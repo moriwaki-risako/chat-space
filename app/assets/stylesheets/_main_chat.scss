@@ -41,9 +41,45 @@
   }
 
 .mainbox__content{
-  background-color:#fafafa;
   height: calc(100% - 190px);
+  padding: 35px;
+  &__box{
+    padding-bottom: 45px;
+    margin-bottom: 42;
+    height: 120px;
+  }
+  &__list{
+    display: flex;
+    padding-bottom: 12px;
+    width: 100%;
+  }
+  &__name{
+    font-size: 16px;
+    color: #333333;
+  }
+  &__day{
+    font-size: 12px;
+    color: #999999;
+    margin-left: 10px;
+  }
+  &__time{
+    font-size: 12px;
+    color: #999999;
+    margin-left: 10px;
+  }
+  &__daytime{
+    display: flex;
+  }
 }
+.mainbox__content__message{
+  color: #434A54;
+  font-size: 14px;
+}
+ 
+
+
+
+
 .mainbox__form{
   background-color: #d2d2d2;
   height: 90px;
