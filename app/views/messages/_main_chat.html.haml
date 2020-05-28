@@ -1,0 +1,31 @@
+.mainbox
+  .mainbox__header
+    .group__content
+      %h2.group__content__name test
+      %p.group__content__member  Member
+    .group__new
+      = link_to "#", class: "group__new__btn" do
+        Edit
+  .mainbox__content
+    .mainbox__content__box
+      .mainbox__content__list
+        .mainbox__content__name masa
+        .mainbox__content__daytime
+          %p.mainbox__content__day 2020/00/00(wed)
+          %p.mainbox__content__time 00:00:00
+      .mainbox__content__message おはよう！
+    .mainbox__content__box
+      .mainbox__content__list
+        .mainbox__content__name masa
+        .mainbox__content__daytime
+          %p.mainbox__content__day 2020/00/00(wed)
+          %p.mainbox__content__time 00:00:00
+      .mainbox__content__message おはよう！ 
+
+  .mainbox__form
+    = form_with do |f|
+      .message__contens
+        = f.text_field :text, class: "message__box", placeholder: "type a message"
+        = f.label :iamge, class: "image_btn" do
+          = icon('far','image')
+      = f.submit "Send", class: "send__btn"
