@@ -26,20 +26,21 @@
     margin-top: 15px;
   }
 }
-  .group__new{
+.group__new{
+  height: 40px;
+  width: 72px;
+  margin: 28px 40px;
+  &__btn{
+    color: #38aef0;
+    text-decoration: none;
+    border: 1px solid #38aef0;
     height: 40px;
-    width: 72px;
-    margin: 28px 40px;
-    &__btn{
-      color: #38aef0;
-      text-decoration: none;
-      border: 1px solid #38aef0;
-      height: 40px;
-      padding: 10px 20px;
-      font-size: 16px;
-    }
+    padding: 10px 20px;
+    font-size: 16px;
   }
+}
 
+// ここからメッセージ蘭
 .mainbox__content{
   height: calc(100% - 190px);
   padding: 35px;
@@ -75,12 +76,50 @@
   color: #434A54;
   font-size: 14px;
 }
- 
 
-
-
-
+// ここからフッターフォーム
 .mainbox__form{
   background-color: #d2d2d2;
   height: 90px;
+  padding: 20px 50px 20px 40px;
+  &__box{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.message__box{
+  width: 100%;
+  background-color: white;
+  padding: 10px 10px ;
+  color: #999999;
+  border: none;
+  display: flex;
+  height: 50px;
+}
+.image_btn{
+  color: black;
+  font-size: 16px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  font-size: 20px;
+  input{
+     display: none;
+  }
+}
+.message__contens{
+  width: 930px;
+  position: relative;
+  float:left;
+}
+.send__btn{
+  background-color: #38aef0;
+  color: white;
+  margin-left: 15px;
+  height: 50px;
+  padding: 10px 30px;
+  font-size: 16px;
+  text-align: center;
 }

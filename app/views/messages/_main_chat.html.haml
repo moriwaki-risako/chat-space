@@ -23,4 +23,9 @@
       .mainbox__content__message おはよう！ 
 
   .mainbox__form
-    .mainbox__form__box
+    = form_with do |f|
+      .message__contens
+        = f.text_field :text, class: "message__box", placeholder: "type a message"
+        = f.label :iamge, class: "image_btn" do
+          = icon('far','image')
+      = f.submit "Send", class: "send__btn"
