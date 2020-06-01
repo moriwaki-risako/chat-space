@@ -9,7 +9,7 @@
 - belongs_to :group
 - belongs_to :user
 
-## userテーブル
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
@@ -19,7 +19,7 @@
 - has_many :massages
 - has_many :group_users
 
-## groupテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
@@ -29,7 +29,7 @@
 - has_many :massages
 - has_many :group_users
 
-## massageテーブル
+## massagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
