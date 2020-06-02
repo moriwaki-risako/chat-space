@@ -2,7 +2,6 @@
   display: flex;
 }
 .mainbox{
-  height:100vh ;
   width : calc(100vw - 300px);
   background-color: #ffffff;
   &__header{
@@ -42,12 +41,13 @@
 
 // ここからメッセージ蘭
 .mainbox__content{
-  height: calc(100% - 190px);
+  height: 100%;
   padding: 35px;
+  background-color: #FAFAFA;
+
   &__box{
     padding-bottom: 45px;
     margin-bottom: 42;
-    height: 120px;
   }
   &__list{
     display: flex;
@@ -63,18 +63,19 @@
     color: #999999;
     margin-left: 10px;
   }
-  &__time{
-    font-size: 12px;
-    color: #999999;
-    margin-left: 10px;
-  }
   &__daytime{
     display: flex;
+    font-size: 12px;
+    color: #999999;
   }
 }
 .mainbox__content__message{
   color: #434A54;
   font-size: 14px;
+}
+.Message__image{
+  height: 300px;
+
 }
 
 // ここからフッターフォーム
@@ -105,7 +106,7 @@
   right: 10px;
   top: 12px;
   font-size: 20px;
-  input{
+  .Hidden{
      display: none;
   }
 }
@@ -122,4 +123,5 @@
   padding: 10px 30px;
   font-size: 16px;
   text-align: center;
+  border-style: none;
 }

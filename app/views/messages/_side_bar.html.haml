@@ -1,8 +1,8 @@
 .sidebar
   .sidebar__header
     .sideheader__items
-      .sideheader__items__username 
-        masa
+      .sideheader__items__username
+        = current_user.name
       .sideheader__items__iconlist
         = link_to new_group_path, class: "link__icon" do
           = icon('far', 'edit')
@@ -13,7 +13,9 @@
   .sidebar__grouplist
     - current_user.groups.each do |group|
       .group__box
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           %h2.group__box__name
             = group.name
-        %p.group__box__massage まだメッセージはありません
+          %p.group__box__massage
+            = group.show_last_message
+
