@@ -1,0 +1,12 @@
+.mainbox__content__box
+  .mainbox__content__list
+    .mainbox__content__name 
+      = current_user.name
+    .mainbox__content__daytime
+      %p.mainbox__content__day
+      = message.created_at.strftime("%Y/%m/%d/ %H:%M")
+  .mainbox__content__message
+    - if message.content.present?
+      %p.Message__content
+        = message.content
+    = image_tag message.image.url, class: 'Message__image' if message.image.present?

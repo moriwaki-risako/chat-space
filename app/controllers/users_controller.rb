@@ -10,10 +10,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # def destroy
-  #   User.destroy
-  # end
-
   private
 
   def user_params
